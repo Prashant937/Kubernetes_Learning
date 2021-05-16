@@ -72,3 +72,6 @@ kubectl cluster-info dump
 
 ```kubectl describe node <node>```
 
+### To add a worker-node
+
+```minikube node add --worker```
