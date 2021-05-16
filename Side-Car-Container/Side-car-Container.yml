@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: myapp
+spec:
+  containers:
+    - name: ubuntu
+      image: busybox
+      command: ["echo","Kubernetes Is fun~~!!"]
+
+    - name: nginx
+      image: nginx
+      ports:
+        - containerPort: 80
